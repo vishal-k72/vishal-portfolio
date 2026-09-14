@@ -429,6 +429,7 @@ section {
     flex-direction: column;
     margin: 8px;
     transition: 0.3s;
+    background-color: #00000095;
 }
 
 .project-card:hover {
@@ -498,6 +499,11 @@ section {
     text-decoration: none;
     border-bottom: 1px solid #555;
     padding-bottom: 3px;
+    transition: all 0.2s ease-in-out;
+}
+.project-links a:hover {
+    transform: scale(1.02) translateX(5px) translateY(-4px);
+    text-shadow:  0 0 11px white;
 }
 
 /* =========================
@@ -674,15 +680,8 @@ section {
 
 .footer-logo {
     /* it is more light  */
-    /* 
-    background: linear-gradient(
-    90deg,
-    #8f1111 0%,
-    #c09a08 25%,
-    #078a48 50%,
-    #0867b8 75%,
-    #8b0caf 100%
-); */
+    
+    
 
     background: linear-gradient(90deg,
             #530505,
@@ -694,7 +693,7 @@ section {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -702,6 +701,18 @@ section {
     font-weight: 800;
     letter-spacing: -1px;
     margin-bottom: 15px;
+}
+.footer-logo:hover{
+    background: linear-gradient(
+        90deg,
+        #e51818 0%,
+        #fad025 25%,
+        #20f289 50%,
+        #2292f4 75%,
+        #be1aec 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .footer-logo span {
