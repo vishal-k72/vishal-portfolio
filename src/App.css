@@ -16,15 +16,14 @@ body::-webkit-scrollbar,
 }
 
 body {
-    background: linear-gradient(
-        133deg,
-        black 20%,
-        #000f16 40%,
-        #011017 40%,
-        rgb(1, 8, 23) 60%,
-        rgb(19, 19, 19) 80%,
-        black 100%
-    );
+    background: linear-gradient(135deg,
+            #000000 0%,
+            #010305 25%,
+            #001018 45%,
+            #010a10 60%,
+            #020407 80%,
+            #000000 100%);
+
 
     color: #fff;
     font-family: Helvetica, Cambria, sans-serif;
@@ -51,12 +50,13 @@ body {
     justify-content: space-between;
 
     background: rgba(0, 0, 0, 0.14);
-    backdrop-filter: blur(4.5px);
+    backdrop-filter: blur(10.5px);
 
     box-shadow: 0 0 14px rgba(255, 255, 255, 0.282);
 
     font-weight: bolder;
     font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .logo {
@@ -105,7 +105,7 @@ body {
 .navbar nav a:hover {
     color: white;
     transform: scale(1.07);
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 14px white;
 }
 
 .dropdown-box {
@@ -182,7 +182,7 @@ section {
     margin-bottom: 25px;
 }
 
-.hero-text > p {
+.hero-text>p {
     color: #999;
     max-width: 650px;
     font-size: 22px;
@@ -231,41 +231,46 @@ section {
    AVATAR
 ========================= */
 .avatar {
-  width: 250px;
-  height: 250px;
+    width: 250px;
+    height: 250px;
 
-  border: 1px solid #444;
-  border-radius: 50%;
+    border: 1px solid #444;
+    border-radius: 50%;
 
-  align-self: center;
+    align-self: center;
 
-  box-shadow: 0 0 73px rgba(235, 235, 237, 0.366);
-  flex-shrink: 0;
-  overflow: hidden; 
+    box-shadow: 0 0 73px rgba(235, 235, 237, 0.366);
+    flex-shrink: 0;
+    overflow: hidden;
 
-  /* --- Yahan animation add ki gayi hai --- */
-  animation: floatUpDown 4s ease-in-out infinite;
+    /* --- Yahan animation add ki gayi hai --- */
+    animation: floatUpDown 4s ease-in-out infinite;
 }
 
 .avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* --- Keyframes for slow up and down effect --- */
 @keyframes floatUpDown {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px); /* Avatar 15px upar jayega */
-  }
-  100% {
-    transform: translateY(0px); /* Wapas apni original position par aayega */
-  }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+        /* Avatar 15px upar jayega */
+    }
+
+    100% {
+        transform: translateY(0px);
+        /* Wapas apni original position par aayega */
+    }
 }
+
 /* =========================
    ABOUT
 ========================= */
@@ -282,7 +287,7 @@ section {
 
 
 /* ====================================================================================================== */
-.django{
+.django {
     width: 100px;
     height: 100px;
     border-radius: 11px;
@@ -294,7 +299,7 @@ section {
 /* =========================
    SKILLS
 ========================= */
-#about{
+#about {
     max-height: auto;
 }
 
@@ -349,6 +354,7 @@ section {
 
     color: #aaa;
     font-size: 12px;
+    transition: all 0.9s ease-in-out;
 }
 
 .skill-logo {
@@ -391,8 +397,8 @@ section {
 }
 
 .skill-item:hover .skill-logo {
-    transform: translateY(-5px) scale(1.08);
-
+    transform: rotate(365deg) scale(1.18);
+    /* transition: all 0.7s ease-in-out; */
     border-color: #777;
 
     box-shadow:
@@ -539,6 +545,14 @@ section {
 
 .education-card h3 {
     font-size: 22px;
+    color: rgb(213, 211, 211);
+    transition:  all 0.6s ease-in-out;
+}
+.education-card h3:hover{
+    color: rgb(255, 255, 255);
+    transform: translateX(20px);
+    transition:  all 0.2s ease-in-out;
+    text-shadow: 0 0 10px rgb(0, 183, 255);
 }
 
 .education-card p,
@@ -702,8 +716,7 @@ section {
     filter: invert(100%);
 
     transform:
-        scale(1.15)
-        rotate(-5deg);
+        scale(1.15) rotate(-365deg);
 }
 
 
@@ -735,6 +748,33 @@ section {
 }
 
 .footer-logo {
+
+    /* it is more light  */
+    /* 
+    background: linear-gradient(
+    90deg,
+    #8f1111 0%,
+    #c09a08 25%,
+    #078a48 50%,
+    #0867b8 75%,
+    #8b0caf 100%
+); */
+
+
+    background: linear-gradient(90deg,
+            #530505,
+            #8a6f06,
+            #036132,
+            #05417c,
+            #52026d);
+    /* background-color: #e0dbdb; */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+
+
     display: inline-block;
 
     color: #fff;
@@ -1004,7 +1044,7 @@ section {
         width: 100%;
     }
 
-    .hero-text > p {
+    .hero-text>p {
         font-size: 18px;
     }
 
