@@ -24,7 +24,6 @@ body {
             #020407 80%,
             #000000 100%);
 
-
     color: #fff;
     font-family: Helvetica, Cambria, sans-serif;
     line-height: 1.6;
@@ -293,9 +292,6 @@ section {
     border-radius: 11px;
 }
 
-
-
-
 /* =========================
    SKILLS
 ========================= */
@@ -405,7 +401,6 @@ section {
         0 0 14px rgba(255, 255, 255, 0.35);
 }
 
-
 /* =========================
    PROJECTS
 ========================= */
@@ -422,69 +417,58 @@ section {
 
 .projects-container {
     display: flex;
-
     gap: 20px;
-
     overflow-x: auto;
-
     padding: 20px;
-
     scroll-snap-type: x mandatory;
 }
 
 .project-card {
     min-width: min(360px, 86vw);
     max-width: 360px;
-
     min-height: 500px;
-
     padding: 26px;
-
     border: 1.6px solid #252525;
     border-radius: 33px;
-
     scroll-snap-align: start;
-
     display: flex;
     flex-direction: column;
-
     margin: 8px;
-
     transition: 0.3s;
 }
 
 .project-card:hover {
     border-color: #555;
-
     transform: scale(1.01) translateY(-5px);
-
-    box-shadow:
-        0 0 10px rgba(254, 254, 254, 0.342);
+    box-shadow: 0 0 10px rgba(254, 254, 254, 0.342);
 }
 
 .project-image {
     width: 100%;
-    height: 185px;
-
+    /* Yeh line box ka ratio 6:4 (Landscape) kar degi */
+    aspect-ratio: 6 / 2.922; 
+    
     margin-bottom: 22px;
-
     border-radius: 20px;
-
     overflow: hidden;
-
     border: 1px solid #2d2d2d;
-
-    background: #111;
+    background: #111; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 .project-image img {
     width: 100%;
     height: 100%;
-
-    object-fit: cover;
-
+    
+    /* Image bina crop hue poori dikhegi */
+    object-fit: contain; 
+    
     display: block;
-
     transition: 0.4s ease;
 }
 
@@ -513,7 +497,6 @@ section {
 
 .project-links {
     margin-top: auto;
-
     display: flex;
     gap: 20px;
 }
@@ -521,12 +504,9 @@ section {
 .project-links a {
     color: white;
     text-decoration: none;
-
     border-bottom: 1px solid #555;
-
     padding-bottom: 3px;
 }
-
 
 /* =========================
    EDUCATION
@@ -622,7 +602,6 @@ section {
         0 0 18px rgba(255, 255, 255, 0.422);
 }
 
-
 /* =========================
    SOCIAL
 ========================= */
@@ -634,50 +613,36 @@ section {
 
 .social-container h4 {
     color: #aaa;
-
     font-size: 16px;
-
     font-weight: 600;
-
     letter-spacing: 1px;
-
     margin-bottom: 22px;
 }
 
 .social-grid {
     display: grid;
-
     grid-template-columns:
         repeat(4, minmax(130px, 1fr));
-
     gap: 14px;
 }
 
 .social-card {
     min-height: 64px;
-
     padding: 15px 18px;
-
     display: flex;
 
     align-items: center;
     justify-content: center;
 
     gap: 10px;
-
     color: #aaa;
-
     text-decoration: none;
 
     font-size: 14px;
     font-weight: 600;
-
     border: 1px solid #292929;
-
     border-radius: 16px;
-
     background: rgba(255, 255, 255, 0.025);
-
     transition:
         transform 0.25s ease,
         color 0.25s ease,
@@ -689,11 +654,8 @@ section {
 .social-card img {
     width: 22px;
     height: 22px;
-
     object-fit: contain;
-
     filter: invert(70%);
-
     transition:
         transform 0.25s ease,
         filter 0.25s ease;
@@ -701,20 +663,15 @@ section {
 
 .social-card:hover {
     color: #fff;
-
     border-color: #777;
-
     background: rgba(255, 255, 255, 0.07);
-
     transform: translateY(-5px) scale(1.02);
-
     box-shadow:
         0 0 18px rgba(255, 255, 255, 0.16);
 }
 
 .social-card:hover img {
     filter: invert(100%);
-
     transform:
         scale(1.15) rotate(-365deg);
 }
@@ -726,24 +683,18 @@ section {
 
 .footer {
     background: #0c0c0c;
-
     color: #fff;
-
     border-top: 1px solid #282727;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .footer-container {
     max-width: 1200px;
-
     margin: auto;
-
     padding: 60px 30px 45px;
-
     display: grid;
-
     grid-template-columns:
         2fr 1fr 1.3fr;
-
     gap: 70px;
 }
 
@@ -773,20 +724,12 @@ section {
     -webkit-text-fill-color: transparent;
 
 
-
-
     display: inline-block;
-
     color: #fff;
-
     text-decoration: none;
-
     font-size: 30px;
-
     font-weight: 800;
-
     letter-spacing: -1px;
-
     margin-bottom: 15px;
 }
 
@@ -796,25 +739,17 @@ section {
 
 .footer-brand p {
     max-width: 380px;
-
     color: #888;
-
     font-size: 14px;
-
     line-height: 1.8;
 }
 
 .footer h4 {
     margin: 5px 0 20px;
-
     color: #fff;
-
     font-size: 15px;
-
     font-weight: 600;
-
     text-transform: uppercase;
-
     letter-spacing: 1px;
 }
 
@@ -827,39 +762,28 @@ section {
 
 .footer-links a {
     width: fit-content;
-
     color: #888;
-
     text-decoration: none;
-
     font-size: 14px;
-
     transition: 0.25s ease;
 }
 
 .footer-links a:hover {
     color: #fff;
-
     transform: translateX(4px);
 }
 
 .footer-contact {
     display: flex;
-
     flex-direction: column;
-
     align-items: flex-start;
-
     gap: 9px;
 }
 
 .footer-contact a {
     color: #ccc;
-
     text-decoration: none;
-
     font-size: 14px;
-
     transition: 0.25s ease;
 }
 
@@ -869,31 +793,22 @@ section {
 
 .footer-contact p {
     color: #777;
-
     font-size: 14px;
 }
 
 .footer-bottom {
     max-width: 1200px;
-
     margin: auto;
-
     padding: 20px 30px;
-
     border-top: 1px solid #1f1f1f;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 20px;
 }
 
 .footer-bottom p {
     color: #666;
-
     font-size: 13px;
 }
 
@@ -931,45 +846,31 @@ section {
 
     .navbar {
         margin: 15px;
-
         height: 76px;
-
         padding: 0 5%;
-
         border: 1px solid #333;
-
         position: sticky;
         top: 15px;
     }
 
     .dropdown-box {
         display: flex;
-
         align-items: center;
-
         gap: 8px;
-
         padding: 8px 16px;
-
         background:
             rgba(255, 255, 255, 0.05);
 
         border: 1px solid #454444;
-
         border-radius: 12px;
-
         color: #fff;
-
         font-size: 15px;
-
         cursor: pointer;
     }
 
     .arrow {
         font-size: 11px;
-
         color: #00ff66;
-
         transition: 0.3s;
     }
 
@@ -979,30 +880,18 @@ section {
 
     .navbar nav {
         display: none;
-
         position: absolute;
-
         top: calc(100% + 12px);
-
         right: 0;
-
         width: 210px;
-
         background:
             rgba(10, 10, 10, 0.95);
-
         backdrop-filter: blur(10px);
-
         border: 1px solid #454444;
-
         border-radius: 18px;
-
         padding: 12px;
-
         flex-direction: column;
-
         gap: 8px;
-
         box-shadow:
             0 10px 30px rgba(0, 0, 0, 0.8),
             0 0 15px rgba(255, 255, 255, 0.15);
@@ -1014,29 +903,19 @@ section {
 
     .navbar nav a {
         display: block;
-
         width: 100%;
-
         padding: 8px 14px;
-
         font-size: 15px;
-
         border-radius: 10px;
     }
 
     .hero {
         flex-direction: column;
-
         align-items: flex-start;
-
         justify-content: center;
-
         gap: 45px;
-
         min-height: calc(100vh - 76px);
-
         padding-top: 60px;
-
         padding-bottom: 70px;
     }
 
@@ -1055,7 +934,6 @@ section {
     .avatar {
         width: 160px;
         height: 160px;
-
         font-size: 45px;
     }
 
@@ -1069,9 +947,7 @@ section {
 
     .projects-container {
         margin-right: -5vw;
-
         padding: 15px;
-
         gap: 14px;
     }
 
@@ -1082,9 +958,7 @@ section {
 
     .education-card {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 10px;
     }
 
@@ -1096,7 +970,6 @@ section {
     .footer-container {
         grid-template-columns:
             1.5fr 1fr;
-
         gap: 45px;
     }
 
@@ -1122,14 +995,12 @@ section {
 
     .skill-box {
         min-height: auto;
-
         padding: 24px;
     }
 
     .skill-items {
         grid-template-columns:
             repeat(4, minmax(55px, 1fr));
-
         gap: 16px 6px;
     }
 
@@ -1160,21 +1031,17 @@ section {
 
     .buttons {
         flex-direction: column;
-
         align-items: flex-start;
     }
 
     .contact-links {
         flex-direction: column;
-
         gap: 15px;
     }
 
     .footer-container {
         padding: 45px 22px 35px;
-
         grid-template-columns: 1fr;
-
         gap: 35px;
     }
 
@@ -1188,33 +1055,27 @@ section {
 
     .footer-bottom {
         padding: 20px 22px;
-
         flex-direction: column;
-
         text-align: center;
-
         gap: 8px;
     }
 }
-
 
 /* =========================
    VERY SMALL MOBILE
 ========================= */
 
 @media (max-width: 380px) {
-
     .footer-logo {
         font-size: 26px;
     }
-
     .footer-container {
         padding-left: 18px;
         padding-right: 18px;
     }
-
     .footer-bottom {
         padding-left: 18px;
         padding-right: 18px;
     }
 }
+
