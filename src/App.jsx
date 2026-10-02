@@ -119,12 +119,12 @@ function App() {
 
             <div className="skill-items">
               <Skill icon="python" name="Python" />
-              <Skill icon="flask" name="Flask" light />
+              {/* <Skill icon="nodejs" name="Node.js" /> */}
+              {/* <Skill icon="express" name="Express" light /> */}
 
-              <Skill icon="django" name="Django" light />
-              <Skill icon="nodejs" name="Node.js" />
-              <Skill icon="express" name="Express" light />
               <Skill icon="fastapi" name="FastAPI" />
+              <Skill icon="flask" name="Flask" light />
+              <Skill icon="django" name="Django" light />
             </div>
           </div>
 
@@ -176,7 +176,7 @@ function App() {
         </div>
 
         <div className="projects-container">
-          <Project
+          {/* <Project
             number="01"
             image={ss}
             title="E-Commerce App"
@@ -198,7 +198,7 @@ function App() {
             title="AI Content Generator"
             description="Simple AI application that generates structured content and displays it in Hindi and English."
             tech="HTML · CSS · JavaScript · AI API"
-          />
+          /> */}
 
           <Project
             number="04"
@@ -393,8 +393,8 @@ function Project({ number, image, title, description, tech }) {
       <small>{tech}</small>
 
       <div className="project-links">
-        <a href="#">GitHub ↗</a>
-        <a href="#">Live Demo ↗</a>
+        <a href="https://github.com/vishal-k72/vishal-portfolio">GitHub ↗</a>
+        <a href="https://vishal-k72.github.io/vishal-portfolio/">Live Demo ↗</a>
       </div>
     </article>
   );

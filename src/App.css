@@ -1,9 +1,9 @@
 /* App ke andar text selection disable */
 * {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 
     margin: 0;
     padding: 0;
@@ -86,7 +86,7 @@ body {
 }
 
 .logoo {
-    color: #00ff66;
+    color: #ff7300;
     font-size: 40px;
 }
 
@@ -143,7 +143,7 @@ section {
 }
 
 /* =========================
-   HERO
+   HERO     
 ========================= */
 
 .hero {
@@ -501,9 +501,10 @@ section {
     padding-bottom: 3px;
     transition: all 0.2s ease-in-out;
 }
+
 .project-links a:hover {
     transform: scale(1.02) translateX(5px) translateY(-4px);
-    text-shadow:  0 0 11px white;
+    text-shadow: 0 0 11px white;
 }
 
 /* =========================
@@ -663,7 +664,7 @@ section {
 ========================= */
 
 .footer {
-    background: #0c0c0c;
+    background: #070707;
     color: #fff;
     border-top: 1px solid #282727;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -680,8 +681,6 @@ section {
 
 .footer-logo {
     /* it is more light  */
-    
-    
 
     background: linear-gradient(90deg,
             #530505,
@@ -693,7 +692,7 @@ section {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -701,18 +700,22 @@ section {
     font-weight: 800;
     letter-spacing: -1px;
     margin-bottom: 15px;
+    letter-spacing: 1.4px;
+    transition: all 1.2s ease-in-out 0.2s;
 }
-.footer-logo:hover{
-    background: linear-gradient(
-        90deg,
-        #e51818 0%,
-        #fad025 25%,
-        #20f289 50%,
-        #2292f4 75%,
-        #be1aec 100%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+.footer-logo:hover {
+    background: linear-gradient(90deg,
+            #e51818 0%,
+            #fad025 25%,
+            #20f289 50%,
+            #2292f4 75%,
+            #be1aec 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(205, 255, 152, 0.532);
+    letter-spacing: 1.4px;
+    /* background-color: orange; */
+    transition: all 0.2s ease;
 }
 
 .footer-logo span {
