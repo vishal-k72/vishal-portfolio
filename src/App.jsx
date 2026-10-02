@@ -1,11 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import resumePdf from "./assets/Resume - Vishal Python Full Stack.pdf"; // Apni PDF file ka path yahan dein
-import p1 from "./assets/p1.png";
 import vk from "./assets/vk.png";
-import p2 from "./assets/p2.png";
-import p3 from "./assets/p3.png";
-import p4 from "./assets/p4.png";
+import ss from "./assets/ss.png";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -122,12 +119,12 @@ function App() {
 
             <div className="skill-items">
               <Skill icon="python" name="Python" />
-              <Skill icon="flask" name="Flask" light />
+              {/* <Skill icon="nodejs" name="Node.js" /> */}
+              {/* <Skill icon="express" name="Express" light /> */}
 
-              <Skill icon="django" name="Django" light />
-              <Skill icon="nodejs" name="Node.js" />
-              <Skill icon="express" name="Express" light />
               <Skill icon="fastapi" name="FastAPI" />
+              <Skill icon="flask" name="Flask" light />
+              <Skill icon="django" name="Django" light />
             </div>
           </div>
 
@@ -179,9 +176,9 @@ function App() {
         </div>
 
         <div className="projects-container">
-          <Project
+          {/* <Project
             number="01"
-            image={p1}
+            image={ss}
             title="E-Commerce App"
             description="Full stack e-commerce application with authentication, products and database."
             tech="Python · Django · React · MySQL"
@@ -189,7 +186,7 @@ function App() {
 
           <Project
             number="02"
-            image={p2}
+            image={ss}
             title="Task Manager"
             description="Task management application where users can create, update and manage their tasks."
             tech="React · Node.js · Express · MongoDB"
@@ -197,15 +194,15 @@ function App() {
 
           <Project
             number="03"
-            image={p3}
+            image={ss}
             title="AI Content Generator"
             description="Simple AI application that generates structured content and displays it in Hindi and English."
             tech="HTML · CSS · JavaScript · AI API"
-          />
+          /> */}
 
           <Project
             number="04"
-            image={p4}
+            image={ss}
             title="Portfolio Website"
             description="Personal developer portfolio showcasing skills, projects and contact information."
             tech="React · JavaScript · CSS"
@@ -396,8 +393,8 @@ function Project({ number, image, title, description, tech }) {
       <small>{tech}</small>
 
       <div className="project-links">
-        <a href="#">GitHub ↗</a>
-        <a href="#">Live Demo ↗</a>
+        <a href="https://github.com/vishal-k72/vishal-portfolio">GitHub ↗</a>
+        <a href="https://vishal-k72.github.io/vishal-portfolio/">Live Demo ↗</a>
       </div>
     </article>
   );
